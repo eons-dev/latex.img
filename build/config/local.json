@@ -1,0 +1,23 @@
+{
+    "next":
+    [
+        {
+            "build": "docker",
+            "config":
+            {
+                "base_image": "eons/img_base",
+                "image_name": "eons/latex.img",
+                "image_os": "alpine",
+                "install":
+                [
+                    "doxygen",
+                    "graphviz",
+                    "pdf2svg"
+                ],
+                "tags" : [
+                    "latest"
+                ]
+            }
+        }
+    ]
+}
