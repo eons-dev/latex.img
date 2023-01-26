@@ -5,14 +5,13 @@
             "build": "docker",
             "config":
             {
-                "base_image": "eons/img_base",
+                "base_image": "eons/base.img",
                 "image_name": "eons/latex.img",
                 "image_os": "alpine",
                 "install":
                 [
-                    "doxygen",
-                    "graphviz",
-                    "pdf2svg"
+                    "texlive",
+                    "texlive-luatex"
                 ],
                 "tags" : [
                     "latest"
